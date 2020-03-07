@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: gt walsheim pro, dm sans, helvetica, arial, sans-serif;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #002333;
+  text-rendering: optimizeLegibility;
+}
+
+#top-content {
+  height: 680px;
+  background-color: #4658d3;
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#main-nav {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #042333;
+  color: #fff;
+  min-width: 810px;
+  width: 100%;
+  padding: 16px 30px;
+  height: 80px;
+  min-height: 59px;
+  padding: 16px 20px;
+  margin-bottom: 50px;
+  z-index: 10002;
+  justify-content: space-between;
+}
+
+.main-nav-logo {
+  width: 10%;
+  padding: 0;
+  justify-content: center;
+  border: 1px solid #042333;
+}
+
+.main-nav-logo img {
+  width: 100%;
+}
+
+.main-nav-left {
+  width: 60%;
+  text-align: left;
+  border: 1px solid #042333;
+  padding: 0 20px;
+}
+
+.main-nav-right {
+  width: 30%;
+  display: flex;
+  border: 1px solid #042333;
+  justify-content: flex-end;
+}
+
+.nav-right-item {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 9px;
+  border: 1px solid #042333;
+}
+
+.nav-right-item a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.content-center {
+  text-align: center;
+  border: 1px solid #042333;
+  margin: 10% auto;
+  padding: 50px;
+  width: 80%;
+}
+
+.content-center h1 {
+  font-size: 50px;
+  line-height: 1em;
+}
+
+.content-center p {
+  font-size: 25px;
+  padding: 20px 0;
+  border: 1px solid #042333;
+}
+
+.content-center a {
+    display: inline-block;
+  color: #000;
+  background-color: #80e878;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 45px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+#find {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#find h1 {
+    font-family: "gt walsheim pro", "dm sans", helvetica, arial, sans-serif;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+#find-nav {
+  display: flex;
+  justify-content: center;
+}
+
+#find-nav a {
+  padding: 4px 9px;
+  text-decoration: none;
+  color: #002333;
+}
+
+#find-nav a.active {
+  color: #3722d3;
+  border-bottom: 4px solid #3722d3;
+}
