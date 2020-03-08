@@ -6,25 +6,33 @@ body {
   font-family: gt walsheim pro, dm sans, helvetica, arial, sans-serif;
   line-height: 1.5em;
   font-weight: 400;
-  color: #002333;
+  /*color: #002333;*/
+  color: #042333;
   text-rendering: optimizeLegibility;
 }
 
+/*#top-content > div:nth-child(odd) {
+    background: #000;
+}*/
+
 #top-content {
   height: 680px;
-  background-color: #4658d3;
+  background-color: gray;
   background-image: url("");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  /*border: 1px solid #042333;*/
+  border: 1px solid white;
 }
 
 #main-nav {
   display: flex;
   align-items: center;
   background-color: transparent;
-  border: 1px solid #042333;
-  color: #fff;
+  border: 1px solid white;
+  /*border: 1px solid #042333;*/
+  /*color: #fff;*/
   min-width: 810px;
   width: 100%;
   padding: 16px 30px;
@@ -40,7 +48,8 @@ body {
   width: 10%;
   padding: 0;
   justify-content: center;
-  border: 1px solid #042333;
+  /*border: 1px solid #042333;*/
+  border: 1px solid white;
 }
 
 .main-nav-logo img {
@@ -50,36 +59,41 @@ body {
 .main-nav-left {
   width: 60%;
   text-align: left;
-  border: 1px solid #042333;
+  /*border: 1px solid #042333;*/
+  border: 1px solid white;
   padding: 0 20px;
 }
 
 .main-nav-right {
   width: 30%;
   display: flex;
-  border: 1px solid #042333;
+  /*border: 1px solid #042333;*/
+  border: 1px solid white;
   justify-content: flex-end;
 }
 
 .nav-right-item {
-  color: #fff;
+  color: #002333;
   font-weight: 700;
   font-size: 15px;
   padding: 10px 9px;
-  border: 1px solid #042333;
+  /*border: 1px solid #042333;*/
+  border: 1px solid white;
 }
 
 .nav-right-item a {
-  color: #fff;
+  color: #002333;
   text-decoration: none;
-  border: 1px solid #fff;
+  /*border: 1px solid #042333;*/
+  border: 1px solid white;
   border-radius: 5px;
   padding: 10px 25px;
 }
 
 .content-center {
   text-align: center;
-  border: 1px solid #042333;
+  /*border: 1px solid #042333;*/
+  border: 1px solid white;
   margin: 10% auto;
   padding: 50px;
   width: 80%;
@@ -88,18 +102,20 @@ body {
 .content-center h1 {
   font-size: 50px;
   line-height: 1em;
+  margin-bottom: 10px;
 }
 
 .content-center p {
   font-size: 25px;
   padding: 20px 0;
-  border: 1px solid #042333;
+  /*border: 1px solid #042333;*/
+  
 }
 
 .content-center a {
-    display: inline-block;
+  display: inline-block;
   color: #000;
-  background-color: #80e878;
+  background-color: #042333;
   border-radius: 5px;
   text-decoration: none;
   padding: 15px 45px;
@@ -110,28 +126,103 @@ body {
 }
 
 #find {
-  padding: 100px 0;
+  padding: 130px 0;
   text-align: center;
+  background-color: #464646;
+  border: 1px solid white;
 }
 
 #find h1 {
-    font-family: "gt walsheim pro", "dm sans", helvetica, arial, sans-serif;
-    font-size: 48px;
-    line-height: 52px;
+  font-family: "gt walsheim pro", "dm sans", helvetica, arial, sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  color: #042333;
+  border: 1px solid white;
+  /*padding: 5px;*/
 }
 
 #find-nav {
   display: flex;
   justify-content: center;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px 0;
 }
 
 #find-nav a {
   padding: 4px 9px;
   text-decoration: none;
-  color: #002333;
+  color: #042333;
+  /*border: 1px solid white;*/
 }
 
 #find-nav a.active {
-  color: #3722d3;
-  border-bottom: 4px solid #3722d3;
+  color:  #042333;
+  border-bottom: 4px solid  #042333;
+}
+
+#find-carousel-wrapper {
+  padding-left: 130px;
+}
+
+.find-carousel-content {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid white;
+    width: 100%;
+    /*max-width: 1100px;*/
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    overflow: visible;
+    left: 0;
+    position: relative;
+    transition: transform .5s ease;
+}
+
+.find-carousel-item {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-right: 1rem;
+}
+
+.find-carousel-item img {
+  width: 100%;
+}
+
+.find-carousel-item .item-text {
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.item-text h6 {
+
+}
+
+.item-text p {
+
+}
+
+.dot-div {
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 5px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #042333;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
